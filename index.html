@@ -142,7 +142,7 @@ input {
 <!-- Secret -->
 <section id="secret">
     <h2>Enter Our Special Word</h2>
-    <input type="password" id="password" placeholder="Hint: something about school 😉">
+    <input type="password" id="password" placeholder="Hint: your birthdate 😉">
     <br>
     <button onclick="checkPassword()">Unlock</button>
 
@@ -181,7 +181,7 @@ function openSecret() {
 
 function checkPassword() {
     let pass = document.getElementById("password").value;
-    if (pass.toLowerCase() === "bunk") {
+    if (pass.toLowerCase() === "05aug") {
         document.getElementById("secretMessage").style.display = "block";
     } else {
         alert("Hmm… try again ❤️");
@@ -190,7 +190,7 @@ function checkPassword() {
 
 /* Days together calculator */
 /* CHANGE THIS DATE to the day you started dating */
-let startDate = new Date("2022-02-14");  
+let startDate = new Date("2022-05-30");  
 let today = new Date();
 let diffTime = today - startDate;
 let days = Math.floor(diffTime / (1000 * 60 * 60 * 24));
